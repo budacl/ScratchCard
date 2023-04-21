@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF78A1C929F271EE00CD9904 /* ScratchCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A1C829F271EE00CD9904 /* ScratchCardApp.swift */; };
+		DF78A1CB29F271EE00CD9904 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A1CA29F271EE00CD9904 /* MainScreenView.swift */; };
+		DF78A1CD29F271F000CD9904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF78A1CC29F271F000CD9904 /* Assets.xcassets */; };
+		DF78A1D129F271F000CD9904 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF78A1D029F271F000CD9904 /* Preview Assets.xcassets */; };
+		DF78A1DB29F271F100CD9904 /* ScratchCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A1DA29F271F100CD9904 /* ScratchCardTests.swift */; };
+		DF78A1E529F271F100CD9904 /* ScratchCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A1E429F271F100CD9904 /* ScratchCardUITests.swift */; };
+		DF78A1E729F271F100CD9904 /* ScratchCardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A1E629F271F100CD9904 /* ScratchCardUITestsLaunchTests.swift */; };
+		DF78A1F629F2885000CD9904 /* ScratchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A1F529F2885000CD9904 /* ScratchCard.swift */; };
+		DF78A1F829F2AF4700CD9904 /* ScratchCardScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A1F729F2AF4700CD9904 /* ScratchCardScreenView.swift */; };
+		DF78A1FA29F2AF5500CD9904 /* ActivateCardScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A1F929F2AF5500CD9904 /* ActivateCardScreenView.swift */; };
+		DF78A1FC29F2B4F000CD9904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A1FB29F2B4F000CD9904 /* AppDelegate.swift */; };
+		DF78A1FF29F2DA1C00CD9904 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF78A20129F2DA1C00CD9904 /* Localizable.strings */; };
+		DF78A20429F2DE8000CD9904 /* GrowingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A20329F2DE8000CD9904 /* GrowingButton.swift */; };
+		DF78A20629F2DEAD00CD9904 /* ScratchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A20529F2DEAD00CD9904 /* ScratchCardView.swift */; };
+		DF78A20929F2DED300CD9904 /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A20829F2DED300CD9904 /* Button+Extension.swift */; };
+		DF78A20C29F2DF1C00CD9904 /* ApiUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A20B29F2DF1C00CD9904 /* ApiUrls.swift */; };
+		DF78A20E29F2DF2D00CD9904 /* ProductionUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A20D29F2DF2D00CD9904 /* ProductionUrls.swift */; };
+		DF78A21029F2DF3F00CD9904 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A20F29F2DF3F00CD9904 /* ApiError.swift */; };
+		DF78A21229F2DF5000CD9904 /* ApiUrlsProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A21129F2DF5000CD9904 /* ApiUrlsProviding.swift */; };
+		DF78A21429F2DF5F00CD9904 /* ApiUrlsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A21329F2DF5F00CD9904 /* ApiUrlsProvider.swift */; };
+		DF78A21629F2DF7400CD9904 /* ScratchCardNetworkProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A21529F2DF7400CD9904 /* ScratchCardNetworkProviding.swift */; };
+		DF78A21829F2DF8400CD9904 /* ScratchCardNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A21729F2DF8400CD9904 /* ScratchCardNetworkProvider.swift */; };
+		DF78A21B29F2DFAB00CD9904 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A21A29F2DFAB00CD9904 /* URL+Extension.swift */; };
+		DF78A21E29F2DFF000CD9904 /* InjectionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A21D29F2DFF000CD9904 /* InjectionKey.swift */; };
+		DF78A22029F2E00000CD9904 /* InjectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A21F29F2E00000CD9904 /* InjectedValues.swift */; };
+		DF78A22229F2E01800CD9904 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A22129F2E01700CD9904 /* Injected.swift */; };
+		DF78A22429F2E03600CD9904 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A22329F2E03600CD9904 /* Injection.swift */; };
+		DF78A22629F2E05D00CD9904 /* ScratchCardCombineNetworkProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A22529F2E05D00CD9904 /* ScratchCardCombineNetworkProviding.swift */; };
+		DF78A22829F2E07400CD9904 /* ScratchCardCombineNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF78A22729F2E07400CD9904 /* ScratchCardCombineNetworkProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF78A1D729F271F100CD9904 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF78A1BD29F271EE00CD9904 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF78A1C429F271EE00CD9904;
+			remoteInfo = ScratchCard;
+		};
+		DF78A1E129F271F100CD9904 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF78A1BD29F271EE00CD9904 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF78A1C429F271EE00CD9904;
+			remoteInfo = ScratchCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF78A1C529F271EE00CD9904 /* ScratchCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF78A1C829F271EE00CD9904 /* ScratchCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardApp.swift; sourceTree = "<group>"; };
+		DF78A1CA29F271EE00CD9904 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		DF78A1CC29F271F000CD9904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF78A1CE29F271F000CD9904 /* ScratchCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScratchCard.entitlements; sourceTree = "<group>"; };
+		DF78A1D029F271F000CD9904 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF78A1D629F271F100CD9904 /* ScratchCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF78A1DA29F271F100CD9904 /* ScratchCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardTests.swift; sourceTree = "<group>"; };
+		DF78A1E029F271F100CD9904 /* ScratchCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF78A1E429F271F100CD9904 /* ScratchCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardUITests.swift; sourceTree = "<group>"; };
+		DF78A1E629F271F100CD9904 /* ScratchCardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF78A1F529F2885000CD9904 /* ScratchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCard.swift; sourceTree = "<group>"; };
+		DF78A1F729F2AF4700CD9904 /* ScratchCardScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardScreenView.swift; sourceTree = "<group>"; };
+		DF78A1F929F2AF5500CD9904 /* ActivateCardScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateCardScreenView.swift; sourceTree = "<group>"; };
+		DF78A1FB29F2B4F000CD9904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF78A20029F2DA1C00CD9904 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DF78A20329F2DE8000CD9904 /* GrowingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingButton.swift; sourceTree = "<group>"; };
+		DF78A20529F2DEAD00CD9904 /* ScratchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardView.swift; sourceTree = "<group>"; };
+		DF78A20829F2DED300CD9904 /* Button+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extension.swift"; sourceTree = "<group>"; };
+		DF78A20B29F2DF1C00CD9904 /* ApiUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrls.swift; sourceTree = "<group>"; };
+		DF78A20D29F2DF2D00CD9904 /* ProductionUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionUrls.swift; sourceTree = "<group>"; };
+		DF78A20F29F2DF3F00CD9904 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		DF78A21129F2DF5000CD9904 /* ApiUrlsProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlsProviding.swift; sourceTree = "<group>"; };
+		DF78A21329F2DF5F00CD9904 /* ApiUrlsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlsProvider.swift; sourceTree = "<group>"; };
+		DF78A21529F2DF7400CD9904 /* ScratchCardNetworkProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardNetworkProviding.swift; sourceTree = "<group>"; };
+		DF78A21729F2DF8400CD9904 /* ScratchCardNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardNetworkProvider.swift; sourceTree = "<group>"; };
+		DF78A21A29F2DFAB00CD9904 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		DF78A21D29F2DFF000CD9904 /* InjectionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionKey.swift; sourceTree = "<group>"; };
+		DF78A21F29F2E00000CD9904 /* InjectedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedValues.swift; sourceTree = "<group>"; };
+		DF78A22129F2E01700CD9904 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		DF78A22329F2E03600CD9904 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		DF78A22529F2E05D00CD9904 /* ScratchCardCombineNetworkProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardCombineNetworkProviding.swift; sourceTree = "<group>"; };
+		DF78A22729F2E07400CD9904 /* ScratchCardCombineNetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchCardCombineNetworkProvider.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF78A1C229F271EE00CD9904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF78A1D329F271F100CD9904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF78A1DD29F271F100CD9904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF78A1BC29F271EE00CD9904 = {
+			isa = PBXGroup;
+			children = (
+				DF78A1C729F271EE00CD9904 /* ScratchCard */,
+				DF78A1D929F271F100CD9904 /* ScratchCardTests */,
+				DF78A1E329F271F100CD9904 /* ScratchCardUITests */,
+				DF78A1C629F271EE00CD9904 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF78A1C629F271EE00CD9904 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A1C529F271EE00CD9904 /* ScratchCard.app */,
+				DF78A1D629F271F100CD9904 /* ScratchCardTests.xctest */,
+				DF78A1E029F271F100CD9904 /* ScratchCardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF78A1C729F271EE00CD9904 /* ScratchCard */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A1F329F279C600CD9904 /* Model */,
+				DF78A1F429F279CC00CD9904 /* View */,
+				DF78A1C829F271EE00CD9904 /* ScratchCardApp.swift */,
+				DF78A1FB29F2B4F000CD9904 /* AppDelegate.swift */,
+				DF78A1CC29F271F000CD9904 /* Assets.xcassets */,
+				DF78A1CE29F271F000CD9904 /* ScratchCard.entitlements */,
+				DF78A20129F2DA1C00CD9904 /* Localizable.strings */,
+				DF78A1CF29F271F000CD9904 /* Preview Content */,
+			);
+			path = ScratchCard;
+			sourceTree = "<group>";
+		};
+		DF78A1CF29F271F000CD9904 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A1D029F271F000CD9904 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF78A1D929F271F100CD9904 /* ScratchCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A1DA29F271F100CD9904 /* ScratchCardTests.swift */,
+			);
+			path = ScratchCardTests;
+			sourceTree = "<group>";
+		};
+		DF78A1E329F271F100CD9904 /* ScratchCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A1E429F271F100CD9904 /* ScratchCardUITests.swift */,
+				DF78A1E629F271F100CD9904 /* ScratchCardUITestsLaunchTests.swift */,
+			);
+			path = ScratchCardUITests;
+			sourceTree = "<group>";
+		};
+		DF78A1F329F279C600CD9904 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A21C29F2DFE600CD9904 /* Injection */,
+				DF78A20A29F2DF0E00CD9904 /* Networking */,
+				DF78A1F529F2885000CD9904 /* ScratchCard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF78A1F429F279CC00CD9904 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A20729F2DEC800CD9904 /* Extension */,
+				DF78A20229F2DE7500CD9904 /* Style */,
+				DF78A1CA29F271EE00CD9904 /* MainScreenView.swift */,
+				DF78A1F729F2AF4700CD9904 /* ScratchCardScreenView.swift */,
+				DF78A1F929F2AF5500CD9904 /* ActivateCardScreenView.swift */,
+				DF78A20529F2DEAD00CD9904 /* ScratchCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF78A20229F2DE7500CD9904 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A20329F2DE8000CD9904 /* GrowingButton.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		DF78A20729F2DEC800CD9904 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A20829F2DED300CD9904 /* Button+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DF78A20A29F2DF0E00CD9904 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A22A29F2E0BF00CD9904 /* Error */,
+				DF78A22929F2E0AC00CD9904 /* Url */,
+				DF78A21929F2DFA100CD9904 /* Extension */,
+				DF78A21529F2DF7400CD9904 /* ScratchCardNetworkProviding.swift */,
+				DF78A21729F2DF8400CD9904 /* ScratchCardNetworkProvider.swift */,
+				DF78A22529F2E05D00CD9904 /* ScratchCardCombineNetworkProviding.swift */,
+				DF78A22729F2E07400CD9904 /* ScratchCardCombineNetworkProvider.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DF78A21929F2DFA100CD9904 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A21A29F2DFAB00CD9904 /* URL+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DF78A21C29F2DFE600CD9904 /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A21D29F2DFF000CD9904 /* InjectionKey.swift */,
+				DF78A21F29F2E00000CD9904 /* InjectedValues.swift */,
+				DF78A22129F2E01700CD9904 /* Injected.swift */,
+				DF78A22329F2E03600CD9904 /* Injection.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		DF78A22929F2E0AC00CD9904 /* Url */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A20B29F2DF1C00CD9904 /* ApiUrls.swift */,
+				DF78A20D29F2DF2D00CD9904 /* ProductionUrls.swift */,
+				DF78A21129F2DF5000CD9904 /* ApiUrlsProviding.swift */,
+				DF78A21329F2DF5F00CD9904 /* ApiUrlsProvider.swift */,
+			);
+			path = Url;
+			sourceTree = "<group>";
+		};
+		DF78A22A29F2E0BF00CD9904 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				DF78A20F29F2DF3F00CD9904 /* ApiError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF78A1C429F271EE00CD9904 /* ScratchCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF78A1EA29F271F100CD9904 /* Build configuration list for PBXNativeTarget "ScratchCard" */;
+			buildPhases = (
+				DF78A1C129F271EE00CD9904 /* Sources */,
+				DF78A1C229F271EE00CD9904 /* Frameworks */,
+				DF78A1C329F271EE00CD9904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScratchCard;
+			productName = ScratchCard;
+			productReference = DF78A1C529F271EE00CD9904 /* ScratchCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF78A1D529F271F100CD9904 /* ScratchCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF78A1ED29F271F100CD9904 /* Build configuration list for PBXNativeTarget "ScratchCardTests" */;
+			buildPhases = (
+				DF78A1D229F271F100CD9904 /* Sources */,
+				DF78A1D329F271F100CD9904 /* Frameworks */,
+				DF78A1D429F271F100CD9904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF78A1D829F271F100CD9904 /* PBXTargetDependency */,
+			);
+			name = ScratchCardTests;
+			productName = ScratchCardTests;
+			productReference = DF78A1D629F271F100CD9904 /* ScratchCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF78A1DF29F271F100CD9904 /* ScratchCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF78A1F029F271F100CD9904 /* Build configuration list for PBXNativeTarget "ScratchCardUITests" */;
+			buildPhases = (
+				DF78A1DC29F271F100CD9904 /* Sources */,
+				DF78A1DD29F271F100CD9904 /* Frameworks */,
+				DF78A1DE29F271F100CD9904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF78A1E229F271F100CD9904 /* PBXTargetDependency */,
+			);
+			name = ScratchCardUITests;
+			productName = ScratchCardUITests;
+			productReference = DF78A1E029F271F100CD9904 /* ScratchCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF78A1BD29F271EE00CD9904 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DF78A1C429F271EE00CD9904 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DF78A1D529F271F100CD9904 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DF78A1C429F271EE00CD9904;
+					};
+					DF78A1DF29F271F100CD9904 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DF78A1C429F271EE00CD9904;
+					};
+				};
+			};
+			buildConfigurationList = DF78A1C029F271EE00CD9904 /* Build configuration list for PBXProject "ScratchCard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF78A1BC29F271EE00CD9904;
+			productRefGroup = DF78A1C629F271EE00CD9904 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF78A1C429F271EE00CD9904 /* ScratchCard */,
+				DF78A1D529F271F100CD9904 /* ScratchCardTests */,
+				DF78A1DF29F271F100CD9904 /* ScratchCardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF78A1C329F271EE00CD9904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF78A1D129F271F000CD9904 /* Preview Assets.xcassets in Resources */,
+				DF78A1FF29F2DA1C00CD9904 /* Localizable.strings in Resources */,
+				DF78A1CD29F271F000CD9904 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF78A1D429F271F100CD9904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF78A1DE29F271F100CD9904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF78A1C129F271EE00CD9904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF78A22629F2E05D00CD9904 /* ScratchCardCombineNetworkProviding.swift in Sources */,
+				DF78A22429F2E03600CD9904 /* Injection.swift in Sources */,
+				DF78A1FC29F2B4F000CD9904 /* AppDelegate.swift in Sources */,
+				DF78A1FA29F2AF5500CD9904 /* ActivateCardScreenView.swift in Sources */,
+				DF78A1F629F2885000CD9904 /* ScratchCard.swift in Sources */,
+				DF78A1CB29F271EE00CD9904 /* MainScreenView.swift in Sources */,
+				DF78A21829F2DF8400CD9904 /* ScratchCardNetworkProvider.swift in Sources */,
+				DF78A20C29F2DF1C00CD9904 /* ApiUrls.swift in Sources */,
+				DF78A22029F2E00000CD9904 /* InjectedValues.swift in Sources */,
+				DF78A21029F2DF3F00CD9904 /* ApiError.swift in Sources */,
+				DF78A21E29F2DFF000CD9904 /* InjectionKey.swift in Sources */,
+				DF78A21229F2DF5000CD9904 /* ApiUrlsProviding.swift in Sources */,
+				DF78A21429F2DF5F00CD9904 /* ApiUrlsProvider.swift in Sources */,
+				DF78A20E29F2DF2D00CD9904 /* ProductionUrls.swift in Sources */,
+				DF78A21B29F2DFAB00CD9904 /* URL+Extension.swift in Sources */,
+				DF78A1C929F271EE00CD9904 /* ScratchCardApp.swift in Sources */,
+				DF78A22829F2E07400CD9904 /* ScratchCardCombineNetworkProvider.swift in Sources */,
+				DF78A20629F2DEAD00CD9904 /* ScratchCardView.swift in Sources */,
+				DF78A22229F2E01800CD9904 /* Injected.swift in Sources */,
+				DF78A20429F2DE8000CD9904 /* GrowingButton.swift in Sources */,
+				DF78A1F829F2AF4700CD9904 /* ScratchCardScreenView.swift in Sources */,
+				DF78A21629F2DF7400CD9904 /* ScratchCardNetworkProviding.swift in Sources */,
+				DF78A20929F2DED300CD9904 /* Button+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF78A1D229F271F100CD9904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF78A1DB29F271F100CD9904 /* ScratchCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF78A1DC29F271F100CD9904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF78A1E529F271F100CD9904 /* ScratchCardUITests.swift in Sources */,
+				DF78A1E729F271F100CD9904 /* ScratchCardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF78A1D829F271F100CD9904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF78A1C429F271EE00CD9904 /* ScratchCard */;
+			targetProxy = DF78A1D729F271F100CD9904 /* PBXContainerItemProxy */;
+		};
+		DF78A1E229F271F100CD9904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF78A1C429F271EE00CD9904 /* ScratchCard */;
+			targetProxy = DF78A1E129F271F100CD9904 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF78A20129F2DA1C00CD9904 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF78A20029F2DA1C00CD9904 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF78A1E829F271F100CD9904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF78A1E929F271F100CD9904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DF78A1EB29F271F100CD9904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScratchCard/ScratchCard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScratchCard/Preview Content\"";
+				DEVELOPMENT_TEAM = EH2WJ79A5Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukasbudac.ScratchCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF78A1EC29F271F100CD9904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScratchCard/ScratchCard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScratchCard/Preview Content\"";
+				DEVELOPMENT_TEAM = EH2WJ79A5Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukasbudac.ScratchCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF78A1EE29F271F100CD9904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EH2WJ79A5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukasbudac.ScratchCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScratchCard";
+			};
+			name = Debug;
+		};
+		DF78A1EF29F271F100CD9904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EH2WJ79A5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukasbudac.ScratchCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScratchCard";
+			};
+			name = Release;
+		};
+		DF78A1F129F271F100CD9904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EH2WJ79A5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukasbudac.ScratchCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScratchCard;
+			};
+			name = Debug;
+		};
+		DF78A1F229F271F100CD9904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EH2WJ79A5Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukasbudac.ScratchCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScratchCard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF78A1C029F271EE00CD9904 /* Build configuration list for PBXProject "ScratchCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF78A1E829F271F100CD9904 /* Debug */,
+				DF78A1E929F271F100CD9904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF78A1EA29F271F100CD9904 /* Build configuration list for PBXNativeTarget "ScratchCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF78A1EB29F271F100CD9904 /* Debug */,
+				DF78A1EC29F271F100CD9904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF78A1ED29F271F100CD9904 /* Build configuration list for PBXNativeTarget "ScratchCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF78A1EE29F271F100CD9904 /* Debug */,
+				DF78A1EF29F271F100CD9904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF78A1F029F271F100CD9904 /* Build configuration list for PBXNativeTarget "ScratchCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF78A1F129F271F100CD9904 /* Debug */,
+				DF78A1F229F271F100CD9904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF78A1BD29F271EE00CD9904 /* Project object */;
+}

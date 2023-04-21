@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  ScratchCard
+
+  Created by Lukas Budac on 21/04/2023.
+  
+*/
+
+"action.scratch" = "Scratch";
+"action.activate" = "Activate";
+"action.reset" = "Reset";
+
+"main.header" = "Scratch card status";
+
+"error.activation" = "Activation failed, please update the app";
+
